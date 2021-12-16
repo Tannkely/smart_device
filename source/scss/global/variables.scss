@@ -1,0 +1,30 @@
+// Основные цвета
+
+$light-grey: hsl(202, 10%, 52%);;
+$grey: hsl(0, 0%, 40%);
+$dark-grey: hsl(201, 34%, 16%);
+$logo-grey: hsl(191, 35%, 19%);
+$baby-blue: hsl(198, 100%, 50%);
+$border-color: hsl(0, 0%, 92%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$footer-bg: hsl(0, 0%, 98%);
+
+// Размеры @media
+
+$mobile-width: 320px;
+$mobile-width-max: 767px;
+$tablet-width: 768px;
+$tablet-width-max: 1023px;
+$desktop-width: 1024px;
+$desktop-header-width: 880px;
+
+// Ретинизация
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// font-family
+
+$pt-mono: "PT Mono", "Courier New", monospace;
+$roboto-condensed: "Roboto Condensed", "Arial", sans-serif;

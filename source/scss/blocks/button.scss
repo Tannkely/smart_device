@@ -1,0 +1,21 @@
+.button {
+  font-family: $roboto-condensed;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border: 1px solid $baby-blue;
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
