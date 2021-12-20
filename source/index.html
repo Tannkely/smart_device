@@ -145,8 +145,10 @@
           <li class="products__item">
             <a href="#" class="products__link products__link--production">
               <picture>
-                <source type="image/webp" srcset="img/bg-products-production-desktop@1x.webp 1x, img/bg-products-production-desktop@2x.webp 2x">
-                <img class="products__image" src="img/bg-products-production-desktop@1x.jpg" srcset="img/bg-products-production-desktop@2x.jpg 2x" alt="Процесс производства печатных плат">
+                <source type="image/webp"
+                  srcset="img/bg-products-production-desktop@1x.webp 1x, img/bg-products-production-desktop@2x.webp 2x">
+                <img class="products__image" src="img/bg-products-production-desktop@1x.jpg"
+                  srcset="img/bg-products-production-desktop@2x.jpg 2x" alt="Процесс производства печатных плат">
               </picture>
               <h3 class="products__link-text">Производство печатных плат</h3>
             </a>
@@ -154,8 +156,10 @@
           <li class="products__item">
             <a href="#" class="products__link products__link--installation">
               <picture>
-                <source type="image/webp" srcset="img/bg-products-installation-desktop@1x.webp 1x, img/bg-products-installation-desktop@2x.webp 2x">
-                <img class="products__image" src="img/bg-products-installation-desktop@1x.jpg" srcset="img/bg-products-installation-desktop@2x.jpg 2x" alt="Процесс монтажа печатных плат">
+                <source type="image/webp"
+                  srcset="img/bg-products-installation-desktop@1x.webp 1x, img/bg-products-installation-desktop@2x.webp 2x">
+                <img class="products__image" src="img/bg-products-installation-desktop@1x.jpg"
+                  srcset="img/bg-products-installation-desktop@2x.jpg 2x" alt="Процесс монтажа печатных плат">
               </picture>
               <h3 class="products__link-text">Монтаж печатных плат</h3>
             </a>
@@ -163,13 +167,41 @@
           <li class="products__item">
             <a href="#" class="products__link products__link--accessories">
               <picture>
-                <source type="image/webp" srcset="img/bg-products-accessories-desktop@1x.webp 1x, img/bg-products-accessories-desktop@2x.webp 2x">
-                <img class="products__image" src="img/bg-products-accessories-desktop@1x.jpg" srcset="img/bg-products-accessories-desktop@2x.jpg 2x" width="370" height="620" alt="Изображение светодиодной ленты">
+                <source type="image/webp"
+                  srcset="img/bg-products-accessories-desktop@1x.webp 1x, img/bg-products-accessories-desktop@2x.webp 2x">
+                <img class="products__image" src="img/bg-products-accessories-desktop@1x.jpg"
+                  srcset="img/bg-products-accessories-desktop@2x.jpg 2x" width="370" height="620"
+                  alt="Изображение светодиодной ленты">
               </picture>
               <h3 class="products__link-text">Комплектующие для светотехники</h3>
             </a>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="ask-us" id="ask-us">
+      <h2 class="visually-hidden">Бесплатная консультация</h2>
+      <div class="ask-us__wrapper wrapper">
+        <div class="ask-us__wrapper-column">
+          <h3 class="ask-us__header">Остались вопросы? Задайте их нам!</h3>
+          <b class="ask-us__header-desc">Мы проконсультируем Вас бесплатно</b>
+          <form class="ask-us__form form" method="POST">
+            <label class="visually-hidden" for="ask-us-name">Введите Ваше имя:</label>
+            <input type="text" name="name" placeholder="Имя" id="ask-us-name" required>
+            <label class="visually-hidden" for="ask-us-phone">Введите Ваш номер телефона:</label>
+            <input type="tel" name="phone" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
+              data-inputmask="+{7}(000)000-00-00" required>
+            <label class="visually-hidden" for="ask-us-question">Введите Ваш вопрос:</label>
+            <textarea name="question" cols="30" rows="6" placeholder="Ваш вопрос" id="ask-us-question"
+              required></textarea>
+            <button class="button" type="submit">Задать вопрос</button>
+            <label class="form__checkbox">
+              <input class="visually-hidden" type="checkbox" name="agreement" required>
+              <span class=""></span>
+              Я согласен на обработку персональных данных
+            </label>
+          </form>
+        </div>
       </div>
     </section>
   </main>

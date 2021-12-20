@@ -1,0 +1,93 @@
+.ask-us {
+  background-color: $baby-blue;
+  background-image:
+    url("../img/bg-ask-us-airplane-desktop@1x.png"),
+    url("data:image/svg+xml,%3Csvg fill='none' height='765' viewBox='0 0 1745 765' width='1745' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m626.842 159.584-274.675 475.75-274.6747-475.75z' opacity='.2' stroke='%23fff'/%3E%3Cpath d='m347.148 357.75-160.648 278.25-160.6477-278.25z' opacity='.2' stroke='%23fff'/%3E%3Cpath d='m1821.26 509.5-278.25 160.648v-321.296z' opacity='.2' stroke='%23fff'/%3E%3Cpath d='m1468.91 255.136 174.34-100.656v201.313z' opacity='.2' stroke='%23fff'/%3E%3Cg fill='%23fff'%3E%3Ccircle cx='77' cy='159' r='5'/%3E%3Ccircle cx='26' cy='358' r='5'/%3E%3Ccircle cx='187' cy='636' r='5'/%3E%3Ccircle cx='352' cy='635' r='5'/%3E%3Ccircle cx='627' cy='159' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(46% - 298px) 161px, calc(40% + 104px) -60px;
+  background-size: auto;
+}
+
+.ask-us__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 1239px;
+}
+
+.ask-us__wrapper-column {
+  width: 51.2%;
+  min-width: 603px;
+  padding-top: 92px;
+  padding-right: 19px;
+  padding-bottom: 73px;
+  padding-left: 12px;
+}
+
+.ask-us__header {
+  font-family: $roboto-condensed;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0;
+  margin-bottom: 12px;
+  margin-left: 14px;
+  color: $white;
+}
+
+.ask-us__header-desc {
+  font-weight: 400;
+  display: block;
+  margin-bottom: 53px;
+  margin-left: 14px;
+  padding-left: 4px;
+  color: $white;
+}
+
+.ask-us__form {
+  padding-left: 3px;
+
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    flex-grow: 1;
+    width: 175px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    padding-top: 13px;
+    padding-right: 16px;
+    padding-bottom: 17px;
+    padding-left: 16px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 154px;
+    margin-bottom: 43px;
+    resize: none;
+  }
+
+  button {
+    flex-grow: 1;
+    width: 175px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    letter-spacing: 0.7px;
+    color: $white;
+    border: 1px solid $white;
+    background-color: $baby-blue;
+  }
+
+  .form__checkbox {
+    line-height: 16px;
+    flex-grow: 1;
+    width: 167px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    margin-left: 23px;
+    padding-top: 8px;
+  }
+}
