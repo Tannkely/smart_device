@@ -50,3 +50,36 @@
   display: none;
 }
 
+@media (max-width: $tablet-width) {
+  .contacts__header {
+    letter-spacing: 0.74px;
+    padding-left: 2.1px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts__heading-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 23px;
+    padding-right: 13px;
+    padding-bottom: 23px;
+    padding-left: 15px;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid rgba($color: #626962, $alpha: 0.2);
+  }
+
+  .contacts__header {
+    width: auto;
+    padding-left: 0;
+  }
+
+  .contacts__list {
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 26px;
+    padding-left: 15px;
+  }
+}

@@ -47,3 +47,36 @@
     opacity: 0.3;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .copyright__block {
+    padding-top: 21px;
+    padding-right: 26px;
+    padding-bottom: 24px;
+    padding-left: 27px;
+  }
+
+  .copyright__item--service,
+  .copyright__item--secure {
+    display: none;
+  }
+
+  .copyright__item--confidence {
+    width: auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .copyright__block {
+    align-items: center;
+    flex-direction: column;
+    padding-top: 17px;
+    padding-right: 26px;
+    padding-bottom: 16px;
+    padding-left: 27px;
+  }
+
+  .copyright__link {
+    line-height: 45px;
+  }
+}
