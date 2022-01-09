@@ -1,25 +1,23 @@
-'use strict';
-
 (function () {
-  var KEYCODE = {
+  let KEYCODE = {
     esc: 27
   };
-  var link = document.querySelector('.page-header__contacts-button');
-  var popup = document.querySelector('.modal');
-  var close = popup.querySelector('.modal__close');
-  var form = popup.querySelector('.modal__form');
-  var userName = popup.querySelector('#call-name');
-  var phone = popup.querySelector('#call-phone');
-  var message = popup.querySelector('#call-question');
-  var isStorageSupport = true;
-  var storage = {};
+  let link = document.querySelector('.page-header__contacts-button');
+  let popup = document.querySelector('.modal');
+  let close = popup.querySelector('.modal__close');
+  let form = popup.querySelector('.modal__form');
+  let userName = popup.querySelector('#call-name');
+  let phone = popup.querySelector('#call-phone');
+  let message = popup.querySelector('#call-question');
+  let isStorageSupport = true;
+  let storage = {};
 
-  var openPopup = function () {
+  let openPopup = function () {
     popup.classList.add('modal--show');
     document.body.classList.add('disable-scroll');
   };
 
-  var closePopup = function () {
+  let closePopup = function () {
     popup.classList.remove('modal--show');
     document.body.classList.remove('disable-scroll');
   };
@@ -32,7 +30,8 @@
     isStorageSupport = false;
   }
 
-  link.addEventListener('click', function (evt) {
+  link.addEventListener('click', (evt) => {
+
     evt.preventDefault();
     openPopup();
 
@@ -44,14 +43,16 @@
     } else {
       userName.focus();
     }
+
   });
 
-  close.addEventListener('click', function (evt) {
+  close.addEventListener('click', (evt) => {
+
     evt.preventDefault();
     closePopup();
   });
 
-  form.addEventListener('submit', function () {
+  form.addEventListener('submit', () => {
     if (isStorageSupport) {
       localStorage.setItem('name', userName.value);
       localStorage.setItem('phone', phone.value);
@@ -59,7 +60,7 @@
     }
   });
 
-  window.addEventListener('keydown', function (evt) {
+  window.addEventListener('keydown', (evt) => {
     if (evt.keyCode === KEYCODE.esc) {
       evt.preventDefault();
       if (popup.classList.contains('modal--show')) {
@@ -68,7 +69,7 @@
     }
   });
 
-  popup.addEventListener('click', function (evt) {
+  popup.addEventListener('click', (evt) => {
     if (evt.target === popup) {
       closePopup();
     }

@@ -2,26 +2,58 @@
   position: relative;
   min-height: 320px;
   padding-top: 28px;
-  padding-right: 145px;
+  padding-right: 30px;
   padding-bottom: 100px;
-  padding-left: 318px;
+  padding-left: 250px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 32px;
-    left: 108px;
-    width: 220px;
-    height: 317px;
-    background-image: url("../img/bg-about-us-2005-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-size: auto;
+.about-us__img {
+  position: absolute;
+  top: 94px;
+  left: -35px;
+  width: 317px;
+  height: 220px;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-about-us-2005-desktop@2x.png");
-      background-size: 220px 317px;
-    }
+
+  transform: rotate(-90deg);
+
+  @media (max-width: $tablet-width) {
+    top: 52px;
+    left: -65px;
+    width: 362px;
+    height: 252px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.about-us div:first-of-type {
+  padding-top: 11px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.about-us div:nth-of-type(2) {
+  padding-right: 130px;
+  padding-left: 64px;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 22px;
+    padding-left: 53px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -64,24 +96,6 @@
     padding-right: 20px;
     padding-bottom: 73px;
     padding-left: 213px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 15px;
-      left: 0;
-      width: 251.08px;
-      height: 361.79px;
-      background-image: url("../img/bg-about-us-2005-tablet@1x.png");
-      background-repeat: no-repeat;
-      background-size: auto;
-
-      @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
-        background-image: url("../img/bg-about-us-2005-tablet@2x.png");
-        background-size: 244px 362px;
-      }
-    }
   }
 
   .about-us__header {

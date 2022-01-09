@@ -29,8 +29,8 @@
     "postcss-csso": "5.0.1",
     "postcss-scss": "^4.0.2",
     "posthtml-include": "^1.7.2",
-    "stylelint": "14.1.0",
-    "stylelint-config-htmlacademy": "0.1.11",
+    "stylelint": "14.2.0",
+    "stylelint-config-htmlacademy": "^0.1.12",
     "stylelint-order-htmlacademy": "^2.0.3"
   },
   "scripts": {

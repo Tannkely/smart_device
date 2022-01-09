@@ -5,10 +5,14 @@
   },
   "env": {
     "es2017": true,
-    "browser": true
+    "browser": true,
+    "node" : 2
   },
   "extends": "htmlacademy/vanilla",
   "rules": {
-    // Additional rules...
+    "prefer-const": "off",
+    "no-useless-return": "off",
+    "quotes": [2, "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "prefer-arrow-callback": [ "error", { "allowUnboundThis": false } ]
   }
 }
