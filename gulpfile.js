@@ -66,8 +66,8 @@ const scriptsVendor = () => {
   return gulp.src(['source/js/vendor/*.js', '!source/**/_*.*'], {
       sourcemaps: true,
     })
-    .pipe(terser())
-    // .pipe(concat('vendor.js'))
+    // .pipe(terser())
+    .pipe(concat('vendor.js'))
     .pipe(gulp.dest('build/js', {
       sourcemaps: '.',
     }))
