@@ -1,33 +1,41 @@
 .about-us {
   position: relative;
   min-height: 320px;
+  max-width: 1230px;
   padding-top: 28px;
   padding-right: 30px;
   padding-bottom: 100px;
   padding-left: 250px;
-}
-
-.about-us__img {
-  position: absolute;
-  top: 94px;
-  left: -35px;
-  width: 317px;
-  height: 220px;
-
-
-  transform: rotate(-90deg);
-
-  @media (max-width: $tablet-width) {
-    top: 52px;
-    left: -65px;
-    width: 362px;
-    height: 252px;
-  }
+  background-image: url("../img/2005_tab@1x.png");
+  background-repeat: no-repeat;
+  background-position: relative;
 
   @media (max-width: $mobile-width) {
-    display: none;
+    background: none;
   }
 }
+
+// .about-us__img {
+//   position: absolute;
+//   top: 94px;
+//   left: -35px;
+//   width: 317px;
+//   height: 220px;
+
+
+//   transform: rotate(-90deg);
+
+//   @media (max-width: $tablet-width) {
+//     top: 52px;
+//     left: -65px;
+//     width: 362px;
+//     height: 252px;
+//   }
+
+//   @media (max-width: $mobile-width) {
+//     display: none;
+//   }
+// }
 
 .about-us div:first-of-type {
   padding-top: 11px;

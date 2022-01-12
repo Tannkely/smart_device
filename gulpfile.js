@@ -54,7 +54,7 @@ const scripts = () => {
   return gulp.src(['source/js/modules/*.js', '!source/**/_*.*'], {
       sourcemaps: true,
     })
-    .pipe(terser())
+    // .pipe(terser())
     .pipe(concat('main.js'))
     .pipe(gulp.dest('build/js', {
       sourcemaps: '.',
@@ -67,7 +67,7 @@ const scriptsVendor = () => {
       sourcemaps: true,
     })
     .pipe(terser())
-    .pipe(concat('vendor.js'))
+    // .pipe(concat('vendor.js'))
     .pipe(gulp.dest('build/js', {
       sourcemaps: '.',
     }))

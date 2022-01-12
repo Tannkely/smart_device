@@ -1,21 +1,21 @@
 (function () {
-  let accordionItems = document.querySelectorAll('.accordion');
-  let accordionPanes = document.querySelectorAll('.accordion__pane');
+  const accordionItems = document.querySelectorAll('.accordion');
+  const accordionPanes = document.querySelectorAll('.accordion__pane');
 
-  let hidePane = function (button, pane) {
+  const hidePane = function (button, pane) {
     button.classList.add('accordion__toggle--inactive');
     pane.classList.add('accordion__pane--hidden');
   };
 
-  let showPane = function (button, pane) {
+  const showPane = function (button, pane) {
     button.classList.remove('accordion__toggle--inactive');
     pane.classList.remove('accordion__pane--hidden');
   };
 
-  let toggleAccordion = function (evt) {
+  const toggleAccordion = function (evt) {
 
     Array.prototype.forEach.call(accordionPanes, (accordionPane) => {
-      let button = accordionPane
+      const button = accordionPane
         .closest('.accordion')
         .querySelector('.accordion__toggle');
       if (
@@ -33,8 +33,8 @@
 
   Array.prototype.forEach.call(accordionItems, (accordion) => {
 
-    let accordionToggleButton = accordion.querySelector('.accordion__toggle');
-    let accordionPane = accordion.querySelector('.accordion__pane');
+    const accordionToggleButton = accordion.querySelector('.accordion__toggle');
+    const accordionPane = accordion.querySelector('.accordion__pane');
     hidePane(accordionToggleButton, accordionPane);
     accordionToggleButton.addEventListener('click', toggleAccordion);
   });
